@@ -1,27 +1,36 @@
-import { HStack, Link } from "@chakra-ui/react";
+import { Flex, Link, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <HStack
+    <Flex
       p={4}
       backgroundColor="transparent"
-      justifyContent="flex-end"
+      justifyContent="space-between" // To place logo and components at the edges
+      alignItems="center" // Vertically align items
       position="absolute"
       width="100%"
       right="10px"
     >
-      <Link as={NavLink} to="/" color="white" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-        Home
-      </Link>
-      <Link as={NavLink} to="/projects" color="white" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-        Projects
-      </Link>
-      <Link as={NavLink} to="/contact" color="white" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
-        Contact
-      </Link>
-    </HStack>
+      {/* Unseen Studio text or logo */}
+      <Text as="span" color="black" fontSize="xl" fontWeight="bold">
+        Unseen Studio
+      </Text>
+
+      {/* Links */}
+      <Flex>
+        <Link as={NavLink} to="/" color="black" textDecoration="none" _hover={{ textDecoration: 'underline' }} mr={4}>
+          Home
+        </Link>
+        <Link as={NavLink} to="/projects" color="black" textDecoration="none" _hover={{ textDecoration: 'underline' }} mr={4}>
+          Projects
+        </Link>
+        <Link as={NavLink} to="/contact" color="black" textDecoration="none" _hover={{ textDecoration: 'underline' }}>
+          Contact
+        </Link>
+      </Flex>
+    </Flex>
   );
 };
 

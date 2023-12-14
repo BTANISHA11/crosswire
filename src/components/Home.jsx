@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <Box bgColor="black" w="full" h="85vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+    <Box bgColor="" w="full" h="85vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <motion.div
         style={{
-          height: "60vh", // Adjusted height to give space for the text
+          height: "60vh", 
         }}
         animate={{
           translateY: "20px",
@@ -20,15 +20,35 @@ const Home = () => {
       ></motion.div>
 
       <Text
-        fontSize="8xl"
-        textAlign="center"
-        fontWeight="thin"
-        color="whiteAlpha.700"
-        mt="4" // Adjusted margin-top to position the text correctly
+      textAlign="center"
+      color="whiteAlpha.700"
+      mt="10" // Set a positive margin-top to properly position the text
+      lineHeight="1" // Set line height for better spacing
+    >
+      <span style={{ fontSize: "40px", fontWeight: "" }}>A BRAND , DIGITAL & MOTION STUDIO</span>
+      <br />
+      <span style={{ fontSize: "90px", fontWeight: "bold" }}>Creating the</span>
+      <br />
+      <span style={{ fontSize: "120px", fontWeight: "bold" }}>Unexpected</span>
+      <Box
+        w="150px"
+        h="20px"
+        bg="black"
+        mt="60px" // Add margin-top to create space between the box and text
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        color="white"
+        fontSize="10px"
+        fontWeight="bold"
       >
-        Creating the Unexpected
-      </Text>
+      View your Work
+      </Box>
+    </Text>
+    
+    
     </Box>
+    
   );
 };
 
