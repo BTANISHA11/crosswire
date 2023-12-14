@@ -48,6 +48,22 @@ const Home = () => {
       >
       View your Work
       </Box>
+      <Box
+        w="200px"
+        h="20px"
+        bg="black"
+        position="absolute"
+        bottom="10px"
+        left="10px"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        color="white"
+        fontSize="10px"
+        fontWeight="bold"
+      >
+        Read about our rebrand
+      </Box>
     </Text>
     
     
