@@ -1,25 +1,32 @@
-import { Flex, Link, Text, Image } from "@chakra-ui/react";
+import { Flex, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const unseenStudioStyles = {
+    color: "black",
+    fontSize: "30px",
+    fontWeight: "bold",
+    marginRight: "0px", // Example margin for spacing between "Unseen Studio" and navigation links
+  };
+
   return (
     <Flex
       p={4}
       backgroundColor="transparent"
-      justifyContent="space-between" // To place logo and components at the edges
+      justifyContent="space-between"
       alignItems="center" // Vertically align items
       position="absolute"
       width="100%"
-      right="10px"
+      right="-20px" // Adjusted the right positioning
     >
-      {/* Unseen Studio text or logo */}
-      <Text as="span" color="black" fontSize="xl" fontWeight="bold">
+      {/* Unseen Studio */}
+      <Text as="span" style={unseenStudioStyles}>
         Unseen Studio
       </Text>
 
-      {/* Links */}
-      <Flex>
+      {/* Navigation Links */}
+      <Flex alignItems="center">
         <Link as={NavLink} to="/" color="black" textDecoration="none" _hover={{ textDecoration: 'underline' }} mr={4}>
           Home
         </Link>
