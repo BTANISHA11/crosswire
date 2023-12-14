@@ -34,8 +34,12 @@ const Home = () => {
         w="150px"
         h="20px"
         bg="black"
+        boxAlign="center"
         mt="60px" // Add margin-top to create space between the box and text
         display="flex"
+        transform="translate(150%, -50%)"
+        top="50%"
+        left="50%"
         justifyContent="center"
         alignItems="center"
         color="white"
