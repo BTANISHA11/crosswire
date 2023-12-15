@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <Box bgColor="" w="full" h="85vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+    <Box bgColor="" w="full" h="60vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <motion.div
         style={{
           height: "60vh", 

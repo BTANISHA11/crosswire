@@ -2,6 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
 
+
 const Home = () => {
   return (
     <Box bgColor="" w="full" h="85vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
