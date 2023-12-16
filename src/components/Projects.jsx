@@ -1,6 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
+import Projectssection from "./Projectssection";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -30,24 +32,24 @@ const Projects = () => {
       <span style={{ fontSize: "50px", fontWeight: "bold" }}>CROSSWIRE</span>
       <br />
       <span style={{ fontSize: "30px", fontWeight: "bold" }}>Brand, Promotional Website, WebGL</span>
+      <Link to="./Projectssection">
       <Box
+        as="button" // Render as a button
         w="150px"
         h="20px"
         bg="black"
-        boxAlign="center"
-        mt="60px" // Add margin-top to create space between the box and text
+        mt="60px"
         display="flex"
-        transform="translate(150%, -50%)"
-        top="50%"
-        left="50%"
         justifyContent="center"
         alignItems="center"
         color="white"
         fontSize="10px"
         fontWeight="bold"
+        cursor="pointer" // Change cursor to pointer to indicate interactivity
       >
-      View Project
+        View Project
       </Box>
+    </Link>
       
     </Text>
     
