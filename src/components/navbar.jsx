@@ -7,7 +7,11 @@ const Navbar = () => {
     color: "black",
     fontSize: "30px",
     fontWeight: "bold",
-    marginRight: "0px", // Example margin for spacing between "Unseen Studio" and navigation links
+    marginRight: "30px", // Adjusted margin for spacing between "Unseen Studio" and navigation links
+  };
+
+  const navLinksStyles = {
+    marginRight: "35px", // Adjust margin between navigation links
   };
 
   return (
@@ -16,9 +20,13 @@ const Navbar = () => {
       backgroundColor="transparent"
       justifyContent="space-between"
       alignItems="center" // Vertically align items
-      position="absolute"
+      position="fixed"
       width="100%"
-      right="-20px" // Adjusted the right positioning
+      top="0" // Position Navbar at the top of the page
+      zIndex="1" // Ensure Navbar appears above other content
+      paddingX="20px" // Add horizontal padding for the Navbar
+      boxShadow="0px 2px 5px rgba(0, 0, 0, 0.1)" // Add a subtle shadow for separation
+      background="white" // Set a white background
     >
       {/* Unseen Studio */}
       <Text as="span" style={unseenStudioStyles}>
@@ -26,7 +34,7 @@ const Navbar = () => {
       </Text>
 
       {/* Navigation Links */}
-      <Flex alignItems="center">
+      <Flex alignItems="center" style={navLinksStyles}>
         <Link as={NavLink} to="/" color="black" textDecoration="none" _hover={{ textDecoration: 'underline' }} mr={4}>
           Home
         </Link>
