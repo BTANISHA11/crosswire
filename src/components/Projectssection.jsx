@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-
+import { Link } from "react-router-dom";
+import Viewproject from './Viewproject';
 const Projectssection = () => {
   return (
     <Box bgColor="" w="full" h="35vh" display="flex" flexDirection="column" justifyContent="flex-start" alignItems="">
@@ -82,9 +83,11 @@ const Projectssection = () => {
       <span style={{ fontSize: "20px", fontWeight: "" }}>Digital</span>
       <br />
       <span style={{ fontSize: "20px", fontWeight: "" }}>WebGL</span>
+      <Link to="/viewproject">
       <div style={{ marginTop: "20px", backgroundColor: "black", width: "120px", height: "40px", color: "white", textAlign: "center", lineHeight: "40px" }}>
-      View Project
-    </div>
+        View Project
+      </div>
+    </Link>
     </div>
 
     {/* Date */}

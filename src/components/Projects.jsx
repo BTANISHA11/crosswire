@@ -2,6 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
 import Projectssection from "./Projectssection";
+import ViewProject from "./Viewproject";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
