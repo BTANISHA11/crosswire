@@ -83,7 +83,7 @@ const Projectssection = () => {
       <span style={{ fontSize: "20px", fontWeight: "" }}>Digital</span>
       <br />
       <span style={{ fontSize: "20px", fontWeight: "" }}>WebGL</span>
-      <Link to="/viewproject">
+      <Link to="./Viewproject">
       <div style={{ marginTop: "20px", backgroundColor: "black", width: "120px", height: "40px", color: "white", textAlign: "center", lineHeight: "40px" }}>
         View Project
       </div>
