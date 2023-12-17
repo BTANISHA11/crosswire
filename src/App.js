@@ -18,8 +18,8 @@ function App() {
         <Route path="/index" element={<Index />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/projectssection" element={<Projectssection />} />
-        <Route path="/projectssection/viewproject" element={<Viewproject />} />
+        <Route path="/projects/projectssection" element={<Projectssection />} />
+        <Route path="/projects/projectssection/viewproject" element={<Viewproject />} />
       </Routes>
       <Footer />
     </Router>
